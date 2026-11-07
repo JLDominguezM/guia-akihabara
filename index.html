@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compras Akihabara</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg:#f6f4ef; --fg:#1c1c1c; --muted:#6b6b6b; --line:#ddd8cc; --card:#fff; --accent:#c0392b; --ok:#1e7d4f; --warn:#b26a00; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141414; --fg:#eee; --muted:#a3a3a3; --line:#333; --card:#1f1f1f; --accent:#ff6f5e; --ok:#4fc28a; --warn:#f0a73a; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.5 -apple-system, system-ui, "Hiragino Sans", sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:16px 16px 60px; }
+  nav { position:sticky; top:0; background:var(--bg); padding:8px 0; display:flex; gap:6px; overflow-x:auto; border-bottom:1px solid var(--line); z-index:2; }
+  nav a { flex:none; padding:6px 12px; border:1px solid var(--line); border-radius:999px; text-decoration:none; color:var(--fg); font-size:.9rem; background:var(--card); }
+  h1 { font-size:1.6rem; margin:12px 0 4px; }
+  h2 { font-size:1.25rem; margin:32px 0 10px; }
+  .sub { color:var(--muted); font-size:.85rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; margin:12px 0; }
+  .card img { width:100%; border-radius:8px; display:block; margin-bottom:8px; }
+  .credit { font-size:.7rem; color:var(--muted); }
+  .precio { font-size:1.6rem; font-weight:700; color:var(--accent); }
+  .tag { display:inline-block; font-size:.75rem; padding:2px 8px; border-radius:999px; border:1px solid currentColor; margin-right:4px; }
+  .ok { color:var(--ok); } .warn { color:var(--warn); }
+  .row { display:flex; justify-content:space-between; gap:8px; padding:6px 0; border-bottom:1px solid var(--line); }
+  .row:last-child { border:0; }
+  .total { font-weight:700; }
+  ol, ul { padding-left:1.2em; margin:6px 0; }
+  li { margin:4px 0; }
+  a { color:var(--accent); }
+  .btn { display:block; text-align:center; padding:10px; border-radius:10px; background:var(--accent); color:#fff; text-decoration:none; margin-top:8px; font-weight:600; }
+  .jp { font-size:1.35rem; line-height:1.6; font-family:"Hiragino Sans","Noto Sans JP",sans-serif; }
+  .es { color:var(--muted); font-size:.85rem; }
+  code { background:var(--line); padding:1px 5px; border-radius:4px; font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <a href="#hoy">Hoy</a><a href="#ssd">SSD</a><a href="#camara">Cámara</a><a href="#tiendas">Tiendas</a><a href="#frases">Frases</a><a href="#taxfree">Tax-free</a>
+</nav>
+
+<h1>Compras Akihabara</h1>
+<p class="sub">Precios vistos el 7 nov 2026, con impuesto, en Kakaku y en tiendas. Los usados se venden rápido: tómalos como referencia, no como garantía. 1 MXN ≈ 8.5 ¥ (aprox., revísalo en el banco).</p>
+
+<h2 id="hoy">Plan de hoy</h2>
+<div class="card">
+<ol>
+  <li><b>SSD 1TB</b> SanDisk Extreme: código <code>SDSSDE61-1T00</code>. Paga <b>≤ ¥31,000</b>.</li>
+  <li><b>Cámara Fujifilm X-S20 usada con lente XC15-45</b>: paga <b>≤ ¥155,000</b>.</li>
+  <li>Si la cámara entra: <b>batería NP-W235</b> (¥7,760) y <b>SD 128GB</b> (¥7,346).</li>
+  <li>Tope total de la cámara con todo: <b>¥170,000 ≈ 20,000 MXN</b>.</li>
+</ol>
+</div>
+
+<h2 id="ssd">1 · SSD portátil 1TB</h2>
+<div class="card">
+  <img src="img/ssd.jpg" alt="SanDisk Extreme Portable SSD">
+  <div class="credit">Foto: ITEagle Europe, Sebastiaan Broekhoven, CC BY-SA 4.0, Wikimedia Commons</div>
+  <b>SanDisk Extreme Portable SSD V2, 1TB</b><br>
+  Código en la caja: <code>SDSSDE61-1T00</code> (termina en -G25, -J25 o similar)
+  <div class="precio">¥30,860 <span class="sub">desde, en Kakaku</span></div>
+  <div class="row"><span>-G25 (13 tiendas)</span><span>desde ¥30,860</span></div>
+  <div class="row"><span>-J25 (13 tiendas)</span><span>desde ¥35,800</span></div>
+  <div class="row"><span>KLAXON (Rakuten)</span><span>¥31,980</span></div>
+  <div class="row"><span>MATEBUS (Rakuten, dice 5 años de garantía)</span><span>¥33,580</span></div>
+  <p class="sub">≈ 3,600 MXN. Si en la tienda cuesta más de ~¥33,000, mejor pídelo en línea.</p>
+  <a class="btn" href="https://search.kakaku.com/SDSSDE61-1T00/">Ver precio actual en Kakaku</a>
+</div>
+
+<h2 id="camara">2 · Cámara</h2>
+<div class="card">
+  <img src="img/x-s20.jpg" alt="Fujifilm X-S20">
+  <div class="credit">Foto: 昼落ち, CC BY-SA 4.0, Wikimedia Commons</div>
+  <span class="tag ok">Plan A</span><b>Fujifilm X-S20 + XC15-45mm, usada</b>
+  <div class="precio">≤ ¥155,000</div>
+  <ul>
+    <li>Colores Fuji (simulaciones de película)</li>
+    <li>Batería grande NP-W235: 750 fotos (CIPA)</li>
+    <li>Estabilizador de 7 pasos, buena para video</li>
+    <li>Modo automático en la rueda: fácil como primera cámara</li>
+  </ul>
+  <p class="sub">Referencias: el último usado en Minna se vendió en ¥155,000. Nueva: ¥185,165 en Minna, demasiado para el presupuesto.</p>
+  <a class="btn" href="https://kakaku.com/item/K0001682446/used/">Usados en Kakaku</a>
+  <a class="btn" href="https://www.minnacamera.com/products/c1679/used">Usados en Minna Camera</a>
+</div>
+
+<div class="card">
+  <b>Cuentas del Plan A</b>
+  <div class="row"><span>X-S20 + XC15-45 usada</span><span>¥155,000</span></div>
+  <div class="row"><span>Batería extra NP-W235 (<a href="https://www.yodobashi.com/community/product/100000001005525607/index.html">Yodobashi</a>)</span><span>¥7,760</span></div>
+  <div class="row"><span>SD SanDisk Extreme PRO 128GB <code>SDSDXXD-128G</code> (<a href="https://shop.tsukumo.co.jp/goods/0619659188634/">Tsukumo</a>)</span><span>¥7,346</span></div>
+  <div class="row total"><span>Total</span><span>¥170,106 ≈ 20,000 MXN</span></div>
+  <p class="sub">Si te pasas, deja la batería extra para después: la cámara trae una. Ojo: la X-S20 usa SD de tamaño normal, no microSD.</p>
+</div>
+
+<div class="card">
+  <span class="tag warn">Si no hay kit</span><b>X-S20 solo cuerpo + lente suelto</b>
+  <p>Cuerpo usado visto en ~¥154,000 a ¥165,000. Pregunta si tienen un XC15-45 usado y suma las dos etiquetas. Si el total pasa de ¥155,000, no conviene.</p>
+</div>
+
+<div class="card">
+  <img src="img/x-s10.jpg" alt="Fujifilm X-S10">
+  <div class="credit">Foto: 昼落ち, CC BY-SA 4.0, Wikimedia Commons</div>
+  <span class="tag warn">Plan B</span><b>Fujifilm X-S10 + lente, usada</b>
+  <div class="precio">≤ ¥120,000</div>
+  <ul>
+    <li>Mismos colores y también tiene estabilizador</li>
+    <li class="warn">Batería chica NP-W126S: compra 2 extra para el frío</li>
+    <li>No encontré un precio actual del kit; el cuerpo solo se vio en ¥133,100 en Fujiya</li>
+  </ul>
+</div>
+
+<div class="card">
+  <b>Antes de pagar un usado</b>
+  <ol>
+    <li>Estado <b>A o AB</b>. Nada que diga <b>ジャンク</b> (junk).</li>
+    <li>Pide el <b>número de disparos</b> (シャッター回数).</li>
+    <li>Que traiga la <b>batería original</b> y la <b>garantía de la tienda</b> (保証).</li>
+    <li>Pruébala: toma fotos, mueve el zoom y revisa que el lente no tenga hongo ni rayas.</li>
+    <li>Toma foto de la etiqueta y mándamela.</li>
+  </ol>
+</div>
+
+<h2 id="tiendas">3 · Tiendas</h2>
+<div class="card">
+  <b>Akihabara</b>
+  <div class="row"><span>Camera no Kitamura, centro de usados<br><span class="sub">4º piso, cerca de la salida central de la estación</span></span><a href="https://www.google.com/maps/search/?api=1&query=カメラのキタムラ+秋葉原中古買取センター">Mapa</a></div>
+  <div class="row"><span>Sofmap Reuse 総合館<br><span class="sub">cámaras y lentes usados</span></span><a href="https://www.google.com/maps/search/?api=1&query=ソフマップ+秋葉原+リユース総合館">Mapa</a></div>
+  <div class="row"><span>Tsukumo<br><span class="sub">SSD y tarjeta SD</span></span><a href="https://www.google.com/maps/search/?api=1&query=ツクモ+秋葉原">Mapa</a></div>
+  <div class="row"><span>Yodobashi Akiba<br><span class="sub">batería NP-W235, 10% en puntos</span></span><a href="https://www.google.com/maps/search/?api=1&query=ヨドバシAkiba">Mapa</a></div>
+</div>
+<div class="card">
+  <b>Si no hay nada en Akihabara</b>
+  <div class="row"><span>Fujiya Camera, Nakano<br><span class="sub">~20 min en la línea Chuo</span></span><a href="https://www.google.com/maps/search/?api=1&query=フジヤカメラ+中野">Mapa</a></div>
+  <div class="row"><span>Map Camera, Shinjuku</span><a href="https://www.google.com/maps/search/?api=1&query=マップカメラ+新宿">Mapa</a></div>
+  <div class="row"><span>Kitamura, Shinjuku</span><a href="https://www.google.com/maps/search/?api=1&query=新宿+北村写真機店">Mapa</a></div>
+  <p class="sub">Revisa el horario en el mapa antes de ir.</p>
+</div>
+
+<h2 id="frases">4 · Frases para la tienda</h2>
+<p class="sub">Enséñale la pantalla al vendedor.</p>
+<div class="card"><div class="jp">X-S20のレンズキットの中古はありますか？</div><div class="es">¿Tienen la X-S20 con lente usada?</div></div>
+<div class="card"><div class="jp">X-S20のボディの中古と、XC15-45の中古はありますか？</div><div class="es">¿Tienen el cuerpo usado de la X-S20 y el lente XC15-45 usado?</div></div>
+<div class="card"><div class="jp">シャッター回数は分かりますか？</div><div class="es">¿Saben cuántos disparos tiene?</div></div>
+<div class="card"><div class="jp">保証は何ヶ月ですか？</div><div class="es">¿Cuántos meses de garantía tiene?</div></div>
+<div class="card"><div class="jp">試し撮りしてもいいですか？</div><div class="es">¿Puedo tomar unas fotos de prueba?</div></div>
+<div class="card"><div class="jp">免税の手続きはできますか？中古品も対象ですか？</div><div class="es">¿Hacen el trámite de tax-free? ¿Aplica también a usados?</div></div>
+<div class="card"><div class="jp">SanDiskのポータブルSSD、1TBはありますか？</div><div class="es">¿Tienen el SSD portátil SanDisk de 1TB?</div></div>
+
+<h2 id="taxfree">5 · Tax-free (desde el 1 nov 2026)</h2>
+<div class="card">
+  <ul>
+    <li>Ahora pagas el precio <b>con</b> impuesto.</li>
+    <li>El 10% te lo devuelven en la <b>aduana del aeropuerto al salir</b>, antes de documentar.</li>
+    <li>Lleva el <b>pasaporte</b> al comprar y trae lo que compres en el <b>equipaje de mano</b>.</li>
+    <li>No confirmé si aplica a cámaras usadas: pregúntalo en la tienda (ver frases).</li>
+  </ul>
+  <a class="btn" href="https://www.gltjp.com/en/article/item/21542/">Guía del nuevo sistema</a>
+</div>
+
+<p class="sub">Fotos de Wikimedia Commons bajo CC BY-SA 4.0. Precios de Kakaku, Minna Camera, Yodobashi, Tsukumo y Fujiya.</p>
+</main>
+</body>
+</html>
